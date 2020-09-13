@@ -13,9 +13,10 @@
         android:layout_marginLeft="10dp">
 
         <com.google.android.material.appbar.AppBarLayout
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/background_rounded">
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/background_rounded"
+            android:stateListAnimator="@null">
 
             <androidx.appcompat.widget.Toolbar
                 android:layout_width="wrap_content"
@@ -38,7 +39,7 @@
             android:fontFamily="@font/montserrat_light"/>
 
     </LinearLayout>
-
+    
     <androidx.viewpager.widget.ViewPager
         android:id="@+id/viewPager"
         android:layout_width="match_parent"
@@ -276,19 +277,20 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_width="373dp"
+        android:layout_height="697dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="464dp"
             android:layout_marginLeft="24dp"
-            android:text="Baru Saja Update"
+            android:layout_marginTop="464dp"
             android:fontFamily="@font/poppins"
-            android:textSize="16dp"
-            android:textColor="#000000"/>
+            android:text="Baru Saja Update"
+            android:textColor="#000000"
+            android:textSize="16dp" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
