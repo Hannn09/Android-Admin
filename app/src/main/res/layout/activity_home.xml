@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="10dp">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/background_rounded">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:navigationIcon="@drawable/more"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <EditText
+            android:id="@+id/searchview"
+            android:background="@drawable/search_view"
+            android:layout_width="306dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:inputType="textPersonName"
+            android:hint="Cari Sesuatu.."
+            android:drawableRight="@drawable/search"
+            android:textColor="#000000"
+            android:padding="15dp"
+            android:fontFamily="@font/montserrat_light"/>
+
+    </LinearLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:foregroundGravity="center"
+        android:overScrollMode="never"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/news"
+            android:background="@drawable/circle_button"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Berita"
+            android:layout_marginTop="232dp"
+            android:layout_marginLeft="-42dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginLeft="42dp"
+            android:src="@drawable/announcement"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="Pengumuman"
+            android:layout_marginTop="232dp"
+            android:layout_marginLeft="-65dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/calendar"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agenda"
+            android:layout_marginTop="232dp"
+            android:layout_marginLeft="-45dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="177dp"
+            android:layout_marginLeft="30dp"
+            android:src="@drawable/book"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Artikel"
+            android:layout_marginTop="232dp"
+            android:layout_marginLeft="-42dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/classroom"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prodi"
+            android:layout_marginTop="326dp"
+            android:layout_marginLeft="-42dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/triangle"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="Jurusan"
+            android:layout_marginTop="326dp"
+            android:layout_marginLeft="-48dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginLeft="37dp"
+            android:src="@drawable/write"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sambutan"
+            android:layout_marginTop="326dp"
+            android:layout_marginLeft="-55dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="272dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/visimisi"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Visi Misi"
+            android:layout_marginTop="326dp"
+            android:layout_marginLeft="-47dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="367dp"
+            android:layout_marginLeft="35dp"
+            android:src="@drawable/organization"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Extra"
+            android:layout_marginTop="421dp"
+            android:layout_marginLeft="-42dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="367dp"
+            android:layout_marginLeft="45dp"
+            android:src="@drawable/laptop"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:text="Fasilitas"
+            android:layout_marginTop="421dp"
+            android:layout_marginLeft="-49dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="367dp"
+            android:layout_marginLeft="39dp"
+            android:src="@drawable/money"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Komite"
+            android:layout_marginTop="421dp"
+            android:layout_marginLeft="-47dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="367dp"
+            android:layout_marginLeft="36dp"
+            android:src="@drawable/work"
+            android:background="@drawable/circle_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P. Kerja"
+            android:layout_marginTop="421dp"
+            android:layout_marginLeft="-47dp"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="464dp"
+            android:layout_marginLeft="24dp"
+            android:text="Baru Saja Update"
+            android:fontFamily="@font/poppins"
+            android:textSize="16dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:background="@drawable/rounded_bottomnav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:itemIconTint="@color/nav_color"
+        app:itemTextColor="@color/nav_color"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/menu"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

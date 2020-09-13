@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">Android</string>
+    <string name="app_name">CustomButtonNavigationView</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_list">List</string>
+    <string name="menu_report">Report</string>
+    <string name="menu_account">Account</string>
+    <string name="menu_setting">Setting</string>
 </resources>

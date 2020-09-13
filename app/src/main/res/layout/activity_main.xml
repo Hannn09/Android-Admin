@@ -59,6 +59,7 @@
             android:layout_marginLeft="10dp"/>
 
         <Button
+            android:onClick="moveactivity"
             android:layout_width="320dp"
             android:layout_height="38dp"
             android:layout_gravity="center"

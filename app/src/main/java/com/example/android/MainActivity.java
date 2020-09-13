@@ -2,7 +2,9 @@ package com.example.android;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,5 +16,10 @@ public class MainActivity extends AppCompatActivity {
 
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getSupportActionBar().hide();
+    }
+
+    public void moveactivity(View v){
+        Intent i = new Intent(MainActivity.this,HomeActivity.class);
+        startActivity(i);
     }
 }
